@@ -2,7 +2,7 @@
 
 
 ## Introduction:
-=============
+
 
 Querying DNS and checking TCP connectivity is typically low CPU consuming but latency and timeouts can still consume a lot of computer ressources.
 
@@ -16,7 +16,7 @@ controller_alarms.js
 
 
 ## Install:
-========
+
 1. install node.js and npm
 apt-get install nodejs npm
 or compile it as described on the node web site
@@ -26,18 +26,18 @@ npm install ain2  native-dns  nodemailer  nodeunit  whois  whoisclient  whoisjs
 
 
 ## To launch the program:
-======================
+
 screen -S controller
 node controller.js
 (the screen command allows to log out the shell and trhen reconnect later to monitor the system)
 
-Input format:
-=============
+### Input format:
+
 A JSON file that contains at list a domain.
 Any extra attribute can be accessed in the alarm callback using the customer javascript object.
 
-Blacklists used:
-===============
+### Blacklists used:
+
 They are defined in check_blacklisted.js
 Currently we use 95 blacklist servers:
 ```
