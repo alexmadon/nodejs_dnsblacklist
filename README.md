@@ -10,7 +10,7 @@ To tackle this problem we chose probably the most adapated programming language 
 
 Nodejs is a javascript server-side programming language basded on Google V8 javascript engine.
 
-To avoid Martin to modify the javascript code, we put all the alarm callbacks in one file:
+To avoid having to modify the javascript code, we put all the alarm callbacks in one file:
 
 controller_alarms.js
 
@@ -18,7 +18,9 @@ controller_alarms.js
 ## Install:
 
 1. install node.js and npm
+```
 apt-get install nodejs npm
+```
 or compile it as described on the node web site
 
 1. install in the current folder some extensions
@@ -27,7 +29,10 @@ npm install ain2  native-dns  nodemailer  nodeunit  whois  whoisclient  whoisjs
 
 ## To launch the program:
 
+In a shell type:
+```
 screen -S controller
+```
 node controller.js
 (the screen command allows to log out the shell and trhen reconnect later to monitor the system)
 
